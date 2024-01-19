@@ -6,12 +6,12 @@ export const useContactsStore = defineStore('contacts' , {
             {
                 prenom: 'Colère',
                 nom: 'Cachée',
-                num: '06 12 34 56 78'
+                num: '0612345678'
             },
             {
                 prenom: 'Sx',
                 nom: 'Sad',
-                num: '06 01 02 03 04'
+                num: '0601020304'
             }
         ],
         appels: [

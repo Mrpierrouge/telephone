@@ -42,7 +42,7 @@ export default {
       </div>
 
     </div>
-    <button v-if="checker == true" @click="toggle()" id="AddContact">
+    <button v-if="checker == true" @click="toggle()">
       <img src="../assets/imgs/icon-plus.png" alt="Ajouter Contact">
     </button>
 
@@ -50,8 +50,8 @@ export default {
       <FormContact></FormContact>
 
     </div>
-    <button v-if="checker == false" @click="toggle()" id="AddContact">
-      <img src="../assets/imgs/icon-retour.png" alt="Ajouter Contact">
+    <button v-if="checker == false" @click="toggle()">
+      <img src="../assets/imgs/icon-retour.png" alt="retour">
     </button>
   </div>
 </template>
