@@ -39,4 +39,7 @@ export default {
   justify-content: space-between;
   width: 70%;
 }
+img{
+  cursor: pointer;
+}
 </style>

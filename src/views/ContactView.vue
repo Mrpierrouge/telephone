@@ -43,7 +43,7 @@ export default {
 
     </div>
     <button v-if="checker == true" @click="toggle()">
-      <img src="../assets/imgs/icon-plus.png" alt="Ajouter Contact">
+      <img class="appel" src="../assets/imgs/icon-plus.png" alt="Ajouter Contact">
     </button>
 
     <div v-if="checker == false" class="AddForm">
