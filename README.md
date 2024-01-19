@@ -1,29 +1,5 @@
-# vue-rendu
+# Téléphone
 
-This template should help get you started developing with Vue 3 in Vite.
+Ceci est une application simulant un téléphone avec un journal d'appels, de contacts.
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+C'est un travail effectué dans le cadre de ma formation a l'IIM, une évaluation du module de cours de Vue
