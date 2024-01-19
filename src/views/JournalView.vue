@@ -45,4 +45,8 @@ export default {
   margin-top: 10%;
   gap: 5px;
 }
+img{
+    cursor: pointer;
+}
+
 </style>

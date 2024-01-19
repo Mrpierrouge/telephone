@@ -56,7 +56,7 @@ export default {
   </div>
 </template>
 
-<style>
+<style scoped>
 .container {
   display: flex;
   justify-content: center;
@@ -83,5 +83,8 @@ button {
   flex-direction: column;
   margin-top: 10%;
   gap: 5px;
+}
+img{
+  cursor: pointer;
 }
 </style>

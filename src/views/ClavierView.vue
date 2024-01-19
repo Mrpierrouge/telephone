@@ -28,9 +28,7 @@ export default {
       this.Contact = "";
     },
     appeler(num) {
-      if (num.length == 10) {
-        this.store.appel(num);
-      }
+      this.store.appel(num);
     },
     InContact() {
       this.store.contacts.forEach((contact) => {
@@ -84,14 +82,16 @@ export default {
       <button @click="addToInput(0)">0</button>
       <button>#</button>
     </div>
-    <button @click="suppToInput()" id="bouton-effacer">
-      <img src="../assets/imgs/icon-retour.png" alt="effacer" />
-    </button>
-    <img
-      src="../assets/imgs/icon-call.png"
-      alt="appeler"
-      @click="appeler(Numero)"
-    />
+    <div class="end-zone">
+      <button @click="suppToInput()" id="bouton-effacer">
+        <img src="../assets/imgs/icon-retour.png" alt="effacer" />
+      </button>
+      <img
+        src="../assets/imgs/icon-call.png"
+        alt="appeler"
+        @click="appeler(Numero)"
+      />
+    </div>
   </div>
 </template>
 <style scoped>
@@ -103,15 +103,14 @@ h2 {
   text-align: center;
 }
 .container {
+  min-width: 300px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding-left: 10vw;
-  padding-right: 10vw;
   padding-top: 10vh;
   flex-direction: column;
 }
 .zone-boutons {
+  min-width: 200px;
   width: 30vw;
   display: flex;
   flex-wrap: wrap;
@@ -119,6 +118,7 @@ h2 {
   gap: 25px;
 }
 button {
+  max-width: 125px;
   width: 25%;
   display: flex;
   flex-direction: column;
@@ -126,5 +126,23 @@ button {
   justify-content: space-around;
   aspect-ratio: 1/1;
   font-size: 20px;
+}
+.end-zone {
+  width: 30vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+img {
+  cursor: pointer;
+}
+h3 {
+  margin-bottom: 10px;
+  padding: 5px;
+  height: 35px;
+  width: 30%;
+  text-align: center;
+  border-bottom: solid 1px orange;
 }
 </style>
