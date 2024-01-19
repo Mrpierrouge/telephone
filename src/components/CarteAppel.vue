@@ -1,26 +1,26 @@
 <script>
-import { useContactsStore} from "../stores/contacts";
+import { useContactsStore } from "../stores/contacts";
 export default {
   name: "CarteAppel",
-  setup(){
+  setup() {
     const contactsStore = useContactsStore();
     return {
-        contactsStore
-    }
+      contactsStore,
+    };
   },
   props: ["appel"],
-
 };
 </script>
 <template>
-
-<div class="carte">
+  <div class="carte">
     <div class="infos">
       <h2>{{ appel.personne }}</h2>
-      <p>{{ appel.heure }}</p>
+      <p>
+        le {{ appel.date.jour }}/{{ appel.date.mois }} à
+        {{ appel.date.heure }}:{{ appel.date.minute }}
+      </p>
     </div>
-</div>
-
+  </div>
 </template>
 <style>
 .carte {
@@ -29,5 +29,11 @@ export default {
   padding: 10px;
   display: flex;
   justify-content: space-between;
+}
+.infos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
 }
 </style>
