@@ -10,7 +10,7 @@ export default {
   },
   props: ["contact"],
   methods: {
-    appel(num){
+    appeler(num){
         this.contactsStore.appel(num)
     }
   }
@@ -22,7 +22,7 @@ export default {
       <h2>{{ contact.prenom }} {{ contact.nom }}</h2>
       <p>{{ contact.num }}</p>
     </div>
-    <img src="../assets/imgs/icon-call.png" alt="appeler" @click="appel(contact.num)">
+    <img src="../assets/imgs/icon-call.png" alt="appeler" @click="appeler(contact.num)">
   </div>
 </template>
 <style scoped>

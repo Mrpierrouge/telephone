@@ -9,6 +9,11 @@ export default {
     };
   },
   props: ["appel"],
+  methods: {
+    appeler(num){
+        this.contactsStore.appel(num)
+    }
+  }
 };
 </script>
 <template>
@@ -20,6 +25,7 @@ export default {
         {{ appel.date.heure }}:{{ appel.date.minute }}
       </p>
     </div>
+    <img src="../assets/imgs/icon-call.png" alt="appeler" @click="appeler(appel.num)">
   </div>
 </template>
 <style>

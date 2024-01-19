@@ -46,12 +46,13 @@ export const useContactsStore = defineStore('contacts' , {
             let date = this.date()
             this.contacts.forEach(contact => {
                 if (num == contact.num) {
-                    personne = contact.prenom + ' ' + contact.nom;
+                    personne = contact.prenom + ' ' + contact.nom
                 }
             });
             
             const Newappel = {
                 personne: personne,
+                num: num,
                 date: {
                     mois: date.mois,
                     jour: date.jour,
